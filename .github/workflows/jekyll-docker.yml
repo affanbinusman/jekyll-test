@@ -9,11 +9,11 @@ on:
 jobs:
   build:
 
-    runs-on: jekyll/builder
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
-    
+    - uses: docker://jekyll/builder
     - name: Install dependencies
       run: npm install
     - name: Set up Ruby
