@@ -68,8 +68,10 @@ jobs:
     #     # custom_opts: '--drafts --lsi'
     #     ### If you need to specify any Jekyll build options, enable the above input
     #     ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    # - name: Build the site in the jekyll/builder container
+    #   run: |
+    #     docker run \
+    #     -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+    #     jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - name: Run npm Start
+      run: npm start    
