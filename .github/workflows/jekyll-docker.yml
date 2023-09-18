@@ -20,10 +20,10 @@ jobs:
       uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
       with:
         ruby-version: '3.2'
-    - name: Install dependencies
-      run: bundle install
-    - name: Install jekyll-pagebreak
-      run: gem install jekyll-pagebreak
+    # - name: Install dependencies
+    #   run: bundle install
+    # - name: Install jekyll-pagebreak
+    #   run: gem install jekyll-pagebreak
     - name: Build Jekyll site
       run: npm run install-jekyll
     # - name: 🔨 install dependencies & build site
