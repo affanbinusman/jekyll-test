@@ -73,6 +73,8 @@ jobs:
     #     docker run \
     #     -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
     #     jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - name: Build pages
+      run: npm run build
     - name: Zip up state
       run: zip -r combined.zip ./
     - name: Archive production artifacts
