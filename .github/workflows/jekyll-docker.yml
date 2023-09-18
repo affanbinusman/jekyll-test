@@ -78,6 +78,6 @@ jobs:
       with:
         name: dist-without-markdown
         path: |
-          dist
+          ./
     # - name: Run npm Start
     #   run: npm start    
