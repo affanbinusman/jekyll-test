@@ -83,5 +83,11 @@ jobs:
         name: dist-without-markdown
         path: |
           combined.zip
+    - name: Deploy to GH Pages 🚀
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.GH_TOKEN }}
+        publish_dir: _site
+        external_repository: jekylltester/jekylltester.github.io
     # - name: Run npm Start
     #   run: npm start    
