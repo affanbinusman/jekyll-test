@@ -88,6 +88,6 @@ jobs:
       with:
         personal_token: ${{ secrets.GH_TOKEN }}
         publish_dir: _site
-        external_repository: jekylltester/jekylltester.github.io
+        external_repository: affanbinusman/affanbinusman.github.io
     # - name: Run npm Start
     #   run: npm start    
