@@ -81,17 +81,19 @@ GEM
     toml-rb (2.1.0)
       citrus (~> 3.0, > 3.0)
     unicode-display_width (1.8.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  cloudcannon-jekyll-bookshop (= 2.2.2)
-  jekyll-bookshop (= 2.2.2)
-  jekyll-pagebreak (~> 0.3)
+  cloudcannon-jekyll-bookshop
+  jekyll-bookshop
+  jekyll-pagebreak
   jekyll-sitemap
   jekyll-tagging
   jekyll-watch!
+  webrick
 
 BUNDLED WITH
-   2.1.4
+   2.4.19
